@@ -1,0 +1,457 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1200px;
+  margin: 0 auto;
+  /* font-family: "Raleway", sans-serif; */
+  /* font-family: "Poppins", sans-serif; */
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+section > .container {
+  width: 1200px;
+  margin: auto;
+  display: block;
+
+  /* padding: 30px 50px; */
+}
+
+#nav-bar {
+  text-align: center;
+  position: relative;
+}
+
+#banner {
+  background-image: linear-gradient(rgba(17, 22, 4, 0.3), rgba(16, 19, 17, 0.5)),
+    url(../images/banner.jpg);
+  background-size: cover;
+  height: 400px;
+  position: relative;
+}
+
+#banner .banner-name {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Raleway", sans-serif;
+  /* font-family: "Play", sans-serif; */
+
+  color: aliceblue;
+}
+
+#banner .banner-work {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: aliceblue;
+}
+
+nav a i {
+  color: #1690d6;
+}
+/* thanh nav  */
+#nav-bar .container {
+  /* tao flex container */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(105, 104, 104);
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  border-left: 1px solid #e1e3e4;
+  flex: 0 0 140px;
+  padding-top: 15px;
+}
+
+nav a:hover {
+  color: #1690d6;
+  background-color: #eefeff;
+  transform: scale(1.1, 1.1);
+}
+
+nav .nav-name {
+  align-self: flex-start;
+  flex-basis: 250px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-family: "Raleway", sans-serif;
+  border-left: 1px solid #e1e3e4;
+}
+
+#nav-bar .nav-name p {
+  font-size: 10px;
+  margin-top: 5px;
+}
+/* Tao border phai cho element cuoi cung */
+#nav-bar a:last-child {
+  border-right: 1px solid #e1e3e4;
+}
+
+/* Phan 3 Thong tin Ca Nhan */
+/* Tao CSS grid cho MTNN & TTCN */
+#about .container {
+  display: grid;
+  width: inherit;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 30px;
+  font-family: "Play", sans-serif;
+  height: 300px;
+}
+
+#target {
+  line-height: 25px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 30px;
+}
+
+#target h1 {
+  margin-bottom: 25px;
+  font-size: 18px;
+  color: #1690d6;
+}
+
+#target p {
+  font-size: 12px;
+}
+
+#personal-info {
+  line-height: 25px;
+  padding-top: 40px;
+  padding-left: 150px;
+  background-color: rgb(236, 236, 236);
+}
+
+#personal-info h1 {
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: #05abb1;
+  /* color: #0db2b8; */
+}
+
+#personal-info li {
+  list-style-type: none;
+  font-size: 12px;
+}
+
+#personal-info li span {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.info-contact-icon a {
+  font-size: 12px;
+  color: #1690d6;
+}
+
+#personal-info i:hover {
+  color: #fc0202;
+}
+/* Phan 4 Thong tin nghe nghiep */
+#job-info .container {
+  width: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.experience,
+.education,
+.activity,
+.hobby,
+.language,
+.skill {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 80px auto;
+  /* justify-items: center; */
+  /* align-items: center; */
+  /* row-gap: 30px; */
+  border: 1px solid #e1e3e4;
+}
+
+.detail-section {
+  grid-column: 1/-1;
+  padding: 20px 30px 30px 30px;
+}
+
+.detail-section li {
+  margin-bottom: 20px;
+}
+
+.detail-section li::marker {
+  color: #1690d6;
+}
+
+#job-info h1 {
+  justify-self: start;
+  align-self: center;
+  color: #1690d6;
+  padding-left: 15px;
+}
+
+#job-info i {
+  transform: scale(2.5, 2.5);
+  justify-self: start;
+  align-self: center;
+}
+
+.current-area {
+  background-color: #1690d6;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #eefeff;
+}
+
+.cv-year {
+  font-style: italic;
+}
+
+.hobby-detail {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.hobby .center {
+  border: 1px solid #1690d6;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hobby .center.music {
+  /* can rieng vong tron vào giua am nhac */
+  margin-left: 5px;
+}
+
+.hobby .center.game {
+  /* can rieng vong tron vào giua choi game */
+  margin-left: 9px;
+}
+
+.hobby-detail i {
+  color: #1690d6;
+  font-size: 8px;
+}
+
+/* Phan 6 Xay dung Ngon Ngu & Ky Nang */
+.level-wrap {
+  margin-left: 20px;
+}
+
+.item-level {
+  margin-bottom: 20px;
+}
+
+.item-level p {
+  font-size: 12px;
+}
+
+.bar.blue {
+  width: 45px;
+  height: 2px;
+  background: #1690d6;
+  border-radius: 10%;
+}
+
+.bar.grey {
+  width: 45px;
+  height: 2px;
+  background: #909394;
+  border-radius: 10%;
+}
+
+.bar-level {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Phan 7 CHUNG CHI, GIAI THUONG */
+#certificate .container {
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+
+  /* height: 250px; */
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+#certificate img {
+  width: 150px;
+}
+
+#certificate h1 {
+  color: #1690d6;
+  margin-bottom: 20px;
+  margin-left: 200px;
+}
+.cer-grid {
+  display: grid;
+  grid-template-columns: 380px 380px;
+  justify-items: start;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.cer-detail {
+  display: flex;
+  position: relative;
+  gap: 10px;
+}
+
+/* Tao border ngang */
+.cer-detail:nth-child(1)::after {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  content: "";
+  border-bottom: 1px solid #d6c08d;
+  width: 220%;
+}
+
+/* Tao border doc */
+.cer-detail:nth-child(2)::before {
+  position: absolute;
+  top: -0px;
+  left: -25px;
+  content: "";
+  border-left: 1px solid #d6c08d;
+  height: 100%;
+}
+
+/* Phan 8 Phan du an */
+#project .container {
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  margin-bottom: 40px;
+}
+
+#project h1 {
+  margin-left: 200px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #1690d6;
+}
+.project-item {
+  display: grid;
+  grid-template-columns: calc(760px / 3) calc(760px / 3) calc(760px / 3);
+
+  justify-content: center;
+  justify-items: center;
+
+  gap: 20px;
+}
+
+.project-item img {
+  width: calc(760px / 3);
+}
+.project-item h2 {
+  font-size: 12px;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  border: 1px solid #e9eff0;
+}
+.project-item-detail {
+  line-height: 17px;
+}
+.project-year {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  border: 1px solid #e9eff0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#project .project-year p:first-child {
+  background-color: #1690d6;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #eefeff;
+}
+
+table {
+  border: 1px solid #e9eff0;
+  border-collapse: collapse;
+  height: 180px;
+}
+td {
+  border-top: 1px solid #e9eff0;
+  border-collapse: collapse;
+  padding-left: 5px;
+  padding-right: 1px;
+}
+
+/* Phan 9 Xay dung phan lien he */
+#footer .container {
+  font-family: "Raleway", sans-serif;
+}
+
+#footer ul {
+  display: flex;
+  justify-content: center;
+}
+#footer ul li {
+  list-style-type: none;
+
+  margin: 30px;
+}
+
+/* can chinh chu vao giua de ngang voi icon */
+#footer a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+#footer a:hover {
+  color: red;
+}
+
+#footer i {
+  font-size: 30px;
+  color: #1690d6;
+}
+/* phan nang cao */
+#nav-bar img {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 8px solid white;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
